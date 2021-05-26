@@ -1,0 +1,116 @@
+/* RESET DEFAULT STYLES */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image: url("../img/Contact.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    background-position: center;
+
+}
+
+
+
+.contact-bg-img{
+    top: -250px;
+}
+.contact-section{
+    margin: 50px;
+    padding: 20px;
+}
+
+.contact-section form{
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+}
+
+.contact-section form > div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+form > div label{
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+
+form > div input, textarea, .btn{
+    width:  50%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+}
+
+form textarea{
+    max-height: 80px;
+    min-height: 80px;
+    max-width: 800px;
+}
+
+
+form .btn{
+    background-color: #2962ff;
+    background-color: rgba(3, 96, 251, 0.3);
+    color: #ffffff;
+    cursor: pointer;
+}
+
+form .btn:hover{
+    font-weight: 600;
+    background-color: rgba(3, 96, 251, 0.6);
+}
+
+
+
+
+
+/* MEDIA QUERY */
+@media (max-width: 980px){
+
+    .about{
+        padding: 100px 20px;
+    }
+}
+
+@media (max-width: 900px){
+
+    /* SKILLS SECTION */
+
+    .about{
+       padding: 100px 50px;
+   }
+
+
+   .contact-section.active{
+    margin-top: 70px !important;
+    }
+
+    form >  div input,
+    textarea,
+    .btn{
+        width: 100%;
+    }
+    
+    form .btn{
+        background-color: #2962ff;
+        color: #ffffff;
+        cursor: pointer;
+        background-color: rgba(3, 96, 251, 0.5);
+    }
+    
+    form .btn:hover{
+        font-weight: 600;
+        background-color: rgba(3, 96, 251, 0.8);
+    }
+}

@@ -1,0 +1,59 @@
+/* RESET DEFAULT STYLES */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image: url("/assets/img/ozan-safak-6bKqoNL8NFk-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    background-position: center;
+
+}
+
+
+/* ABOUT SECTION STYLE */
+.about{
+      padding: 100px 200px;
+      transition: 3ms ease;
+}
+
+.about-image{
+    height: 200px;
+    width: 100%;
+}
+
+.about-image img{
+    height: 100%;
+    width:70%;
+
+}
+
+.about-me{
+    margin-top: 20px;
+    line-height: 1.5;
+    color: wheat;
+}
+
+
+/* MEDIA QUERY */
+@media (max-width: 980px){
+
+    .about{
+        padding: 100px 20px;
+    }
+}
+
+@media (max-width: 900px){
+
+    /* SKILLS SECTION */
+
+    .about{
+       padding: 100px 50px;
+   }
+}

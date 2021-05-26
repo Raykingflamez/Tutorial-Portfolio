@@ -1,0 +1,114 @@
+/* RESET DEFAULT STYLES */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image: url("/assets/img/ozan-safak-6bKqoNL8NFk-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    background-position: center;
+ 
+}
+
+
+/* MAIN SECTION */
+
+main{
+    display: flex;
+    padding: 100px 200px;
+    transition: 0.3s ease;
+}
+
+/* INFO SECTION */
+.info{
+    width: 70%;
+    line-height: 1.5;
+    color: #fff;
+    
+}
+
+.info h1{
+    font-size: 50px;
+    font-weight: 700;
+    color: rgb(207, 138, 10);
+    
+}
+
+.info p{
+    font-size: 35px;
+}
+
+.info p strong{
+    color: rgb(174, 177, 13);
+}
+
+IMAGE SECTION
+.my-image{
+    width: 30%;
+}
+
+.my-image img{
+    width: auto;
+    height: 50vh;
+    border-radius: 50px;
+}
+
+/* ICONS STYLE */
+
+.fab{
+    /* display: inline-block; */
+    padding: 20px;
+    font-size: 20px;
+    color: wheat ;
+    
+}
+
+
+/* MEDIA QUERY */
+
+@media (max-width: 980px){
+
+    main{
+        padding: 100px 20px;
+    }
+}
+
+@media (max-width: 900px){
+
+    /* MAIN SECTION */
+
+    main{
+       display: flex;
+       padding: 100px 50px;
+   }
+
+    /* INFO SECTION */
+   .info{
+      width: 40%;
+      line-height: 1.5;
+   }
+
+
+}
+
+@media (max-width:750px){
+    main{
+        flex-direction: column;
+    }
+
+    .info{
+        width: 100%;
+    }
+
+    .my-image{
+        width: 100%;
+        margin-top: 50px;
+    }
+
+}
